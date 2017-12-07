@@ -1,0 +1,71 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+    <head>
+        <title>Information about China</title>
+        <link href="{% static 'index.css' %}" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="header">
+            <h1>~ Learn About China ~</h1>
+            <p>~ Generic Introduction ~</p>
+        </div>
+        <div id="body">
+            <h2>~ Choose A Region ~</h1>
+            <form action="http://wikipedia.com/" method="get">
+                <p>Provinces (23)</p>
+                <select name="province" onchange="location=this.options[this.selectedIndex].value;">
+                    <option selected="selected"></option>
+                    <option value="region/1">Anhui</option>
+                    <option value="region/2">Fujian</option>
+                    <option value="region/3">Gansu</option>
+                    <option value="region/4">Guangdong</option>
+                    <option value="region/5">Guizhou</option>
+                    <option value="region/6">Hainan</option>
+                    <option value="region/7">Hebei</option>
+                    <option value="region/8">Heilongjiang</option>
+                    <option value="region/9">Henan</option>
+                    <option value="region/10">Hubei</option>
+                    <option value="region/11">Hunan</option>
+                    <option value="region/12">Jiangsu</option>
+                    <option value="region/13">Jiangxi</option>
+                    <option value="region/14">Jilin</option>
+                    <option value="region/15">Liaoning</option>
+                    <option value="region/16">Qinghai</option>
+                    <option value="region/17">Shaanxi</option>
+                    <option value="region/18">Shandong</option>
+                    <option value="region/19">Shanxi</option>
+                    <option value="region/20">Sichuan</option>
+                    <option value="region/21">Taiwan</option>
+                    <option value="region/22">Yunnan</option>
+                    <option value="region/23">Zhejiang</option>
+                </select>
+                <p>Autonomous Regions (5)</p>
+                <select name="autonomous region" onchange="location=this.options[this.selectedIndex].value;">
+                    <option selected="selected"></option>
+                    <option value="region/28">Guangxi Zhuang</option>
+                    <option value="region/29">Inner Mongolia</option>
+                    <option value="region/30">Ningxia Hui</option>
+                    <option value="region/31">Tibet</option>
+                    <option value="region/32">Xinjiang Uyghur</option>
+                </select>
+                <p>Municipalities (4)</p>
+                <select name="municipality" onchange="location=this.options[this.selectedIndex].value;">
+                    <option selected="selected"></option>
+                    <option value="region/24">Beijing</option>
+                    <option value="region/25">Chongqing</option>
+                    <option value="region/26">Shanghai</option>
+                    <option value="region/27">Tianjin</option>
+                </select>
+                <p>Special Administrative Regions (2)</p>
+                <select name="administrative region" onchange="location=this.options[this.selectedIndex].value;">
+                    <option selected="selected"></option>
+                    <option value="region/33">Hong Kong</option>
+                    <option value="region/34">Macao</option>
+            </form>
+        </div>
+        <p><script>document.write(new Date().getFullYear())</script></p>
+    </body>
+</html>
+        

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{region_name}} Information</title>
+    </head>
+    <body>
+        <div id="info">
+            <h1>Here is some information about {{region_name}} {{region_type}}</h1>
+            <p>Name: {{region_name}} {{abbrev}}</p>
+            <p>Type: {{region_type}}</p>
+            <p>Name (Chinese): {{chinese}}</p>
+            <p>Largest City: {{largest_city}}</p>
+            <p>Population: {{population}}; ranked {{pop_rank}} in China</p>
+            <p>Population Density: {{density}}, ranked {{density_rank}} in China</p>
+            <p>Divisions: {{divisions}}</p>
+            <p>GDP per capita: {{gdp}}</p>
+            <p>Ethnic composition: {{ethnic}}</p>
+            <p>Languages and dialects: {{languages}}</p>
+            <p>Governor: {{governor}}</p>
+            <p>Secretary: {{secretary}}</p>
+            <p>{{prov_info}}</p>
+            <p>Learn more about <a href="{{wiki}}">{{region_name}}</a></p>
+        </div>
+        <div id="footer">
+            <a href="{% url 'index' %}">Back to index</a>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> - <i>Kris<i></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    background: url("images/index.jpg");
+    background-size: cover;
+}
+
+#header {
+    text-align: center;
+    color: red;
+}
+
+#footer {
+    text-align: center;
+    color: black;
+}
+
+#header p {
+    color: yellow;
+}
+
+#body {
+    color: yellow;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+
